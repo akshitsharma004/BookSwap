@@ -69,8 +69,8 @@ export default function LatestNews() {
 
     useGSAP(() => {
         gsap.to(".slider2", {
-            y: "-51%",
-            duration: 11,
+            y: "-48%",
+            duration: 12,
             repeat: -1,
             // stagger: 0.1,
             ease: "none",
@@ -79,7 +79,7 @@ export default function LatestNews() {
 
     useGSAP(() => {
         gsap.to(".slider3", {
-            y: "-51%",
+            y: "-45%",
             duration: 9,
             repeat: -1,
             // stagger: 0.1,

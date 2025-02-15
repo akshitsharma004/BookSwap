@@ -4,12 +4,12 @@ import pic2 from "../assets/Cat.png";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 function Exchange() {
-   useGSAP(()=> {
-          gsap.from("#cat",{
-            x: "100%",
-            duration: 5,
-          })
-   })
+//    useGSAP(()=> {
+//           gsap.from("#cat",{
+//             x: "100%",
+//             duration: 5,
+//           })
+//    })
     return (
         <div className="flex overflow-hidden">
             <img src={pic1} alt="" />
