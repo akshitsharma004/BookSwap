@@ -38,8 +38,8 @@ function HomeSecond() {
                 </h1>
 
                {data.map((item,index)=>(
-                 <div key={index} id="slide1" className="border w-[40rem] px-4 py-8 rounded-md border-yellow-600">
-                 <h1 className="text-4xl text-yellow-600">{item.heading}</h1>
+                 <div key={index} id="slide1" className="border w-[40rem] hover:bg-yellow-600  px-4 py-8 rounded-md border-yellow-600">
+                 <h1 className="text-4xl text-yellow-600 hover:text-white">{item.heading}</h1>
                  <p className="text-xl py-2 ">
                      {item.para}
                  </p>

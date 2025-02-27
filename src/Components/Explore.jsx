@@ -35,7 +35,7 @@ function Explore() {
                     {data.map((elem, index) => (
                         <div
                             key={index}
-                            className="h-[23rem] border hover:bg-zinc-800 hover:border-transparent  border-white w-[18rem] flex flex-col items-center "
+                            className="h-[23rem] hover:scale-105 ease-in-out border hover:bg-zinc-800 hover:border-transparent  border-white w-[18rem] flex flex-col items-center "
                         >
                             <div className="w-[18rem] h-[20rem] px-2 overflow-hidden">
                                 <img
