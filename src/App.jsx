@@ -1,33 +1,3 @@
-// import React from 'react'
-// import Navbar from './Components/Navbar'
-// import Home from './Components/Home'
-// import Login from './Components/Login'
-// import Footer from './Components/Footer'
-// import HomeSecond from './Components/HomeSecond'
-// import Exchange from './Components/Exchange'
-// import WhyToExchange from './Components/WhyToExchange'
-// import About from './Components/About'
-// import Categories from './Components/Categories'
-
-// function App() {
-//   return (
-//     <div>
-//         <Navbar/>
-//         <Home/>
-//         <Categories/>
-//         <HomeSecond/>
-
-//         <Exchange/>
-//         <WhyToExchange/>
-//         <About/>
-//         <Login/>
-
-//         <Footer/>
-//     </div>
-//   )
-// }
-
-// export default App
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Layout from "./Layout/Layout";
@@ -38,6 +8,7 @@ import MainLogIn from "./Pages/MainLogIn";
 import MainSignIn from "./Pages/MainSignIn";
 import MainWhyToExchange from "./Pages/MainWhyToExchange";
 import MainExplore from "./Pages/MainExplore";
+import Explore from "./Components/Explore";
 
 function App() {
     return (
@@ -55,7 +26,7 @@ function App() {
                         <Route path="/mainsignin" element={<MainSignIn />} />
                         <Route path="/mainsignin" element={<MainSignIn />} />
                         <Route path="/mainwhytoexchange" element={<MainWhyToExchange />} />
-                        <Route path="/mainexplore" element={<MainExplore />} />
+                        <Route path="/mainexplore" element={<Explore />} />
 
 
                     </Route>

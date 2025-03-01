@@ -7,8 +7,8 @@ function MainExchange() {
   return (
     <div>
      <Exchange/>
-     <WhyToExchange/>
      <BookSwap/>
+     <WhyToExchange/>
     </div>
   )
 }
