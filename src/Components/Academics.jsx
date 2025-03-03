@@ -14,7 +14,7 @@ function Academics() {
             <div className="py-16">
                 <h1 className="text-center font-semibold text-white text-5xl">
                     <span className="text-yellow-600">Academics</span> and
-                    Textbooks
+                    Textbooksbjblhbljbb ,lhblhb
                 </h1>
             </div>
             <div className="flex flex-wrap gap-20 justify-center">
