@@ -12,7 +12,10 @@ function BookSwap() {
         setCondition("");
     };
 
-
+    const AddProductHandler = (e) => {
+        e.preventdefault();
+    };
+    
     return (
         <div className="bg-black py-10">
             <h1 className="text-7xl py-20 text-center text-white font-bold">
