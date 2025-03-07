@@ -8,7 +8,7 @@ import pic3 from "../assets/Action.jpg";
 import pic4 from "../assets/Business.jpg";
 import pic5 from "../assets/Crime.jpg";
 import pic6 from "../assets/Drama.jpg";
-import pic7 from "../assets/Health.jpg";
+import pic7 from "../assets/HEalth.jpg";
 import pic8 from "../assets/Historical.jpg";
 import pic9 from "../assets/Biography.avif";
 import pic10 from "../assets/Horror.avif";
@@ -61,9 +61,9 @@ export default function Categories() {
             <h1 className="text-7xl font-bold my-16">Categories</h1>
             <div className="w-full my-8 flex justify-end">
                 <Link to="/MainExplore">
-                <h2 className="text-2xl rounded-full px-6 py-3 border border-black hover:bg-white hover:text-black bg-black text-white font-semibold">
-                    Explore All
-                </h2>
+                    <h2 className="text-2xl rounded-full px-6 py-3 border border-black hover:bg-white hover:text-black bg-black text-white font-semibold">
+                        Explore All
+                    </h2>
                 </Link>
             </div>
             <div className="px-10 py-10 w-full text-white bg-black">
