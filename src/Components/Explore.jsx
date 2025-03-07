@@ -5,7 +5,7 @@ import pic3 from "../assets/Action.jpg";
 import pic4 from "../assets/Business.jpg";
 import pic5 from "../assets/Crime.jpg";
 import pic6 from "../assets/Drama.jpg";
-import pic7 from "../assets/Health.jpg";
+import pic7 from "../assets/HEalth.jpg";
 import pic8 from "../assets/Historical.jpg";
 import pic9 from "../assets/Biography.avif";
 import pic10 from "../assets/Horror.avif";
