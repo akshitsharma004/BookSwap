@@ -88,8 +88,8 @@ export default function LatestNews() {
     });
 
     return (
-        <div className="h-screen bg-black py-16 text-white overflow-hidden">
-            <h1 className="text-6xl text-orange-500 flex justify-center mb-12">
+        <div className=" px-16 h-screen bg-black py-10 text-white overflow-hidden">
+            <h1 className="text-6xl text-orange-500 flex justify-center mb-24">
                 Why to Exchange Books?
             </h1>
 

@@ -23,22 +23,22 @@ export default function Categories() {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 4,
-        // autoplay: true,
-        // autoplaySpeed: 2000,
-        // responsive: [
-        //     {
-        //         breakpoint: 1024,
-        //         settings: {
-        //             slidesToShow: 2,
-        //         },
-        //     },
-        //     {
-        //         breakpoint: 768,
-        //         settings: {
-        //             slidesToShow: 1,
-        //         },
-        //     },
-        // ],
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                },
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     };
 
     const data = [
@@ -57,30 +57,30 @@ export default function Categories() {
     ];
 
     return (
-        <div className="mx-28 py-32 flex flex-col justify-center items-center">
-            <h1 className="text-7xl font-bold my-16">Categories</h1>
-            <div className="w-full my-8 flex justify-end">
+        <div className="max-w-screen-xl mx-auto py-32 flex flex-col items-center">
+            <h1 className="text-5xl md:text-6xl font-bold my-16 text-center">Categories</h1>
+            <div className="w-full my-8 flex justify-end px-4">
                 <Link to="/MainExplore">
-                    <h2 className="text-2xl rounded-full px-6 py-3 border border-black hover:bg-white hover:text-black bg-black text-white font-semibold">
+                    <h2 className="text-xl md:text-2xl rounded-full px-6 py-3 border border-black hover:bg-white hover:text-black bg-black text-white font-semibold">
                         Explore All
                     </h2>
                 </Link>
             </div>
-            <div className="px-10 py-10 w-full text-white bg-black">
+            <div className="px-4 md:px-10 py-10 w-full text-white bg-black">
                 <Slider {...settings}>
                     {data.map((elem, index) => (
                         <div
                             key={index}
-                            className="h-[25rem] w-[18rem] flex flex-col items-center"
+                            className="h-[25rem] w-full flex flex-col items-center"
                         >
-                            <div className="w-[18rem] h-[20rem] px-2 overflow-hidden">
+                            <div className="w-full max-w-[18rem] h-[20rem] px-2 overflow-hidden">
                                 <img
                                     className="w-full h-full object-cover"
                                     src={elem.img}
                                     alt={elem.name}
                                 />
                             </div>
-                            <h1 className=" text-2xl font-semibold px-2 py-5">
+                            <h1 className="text-xl md:text-2xl font-semibold px-2 py-5 text-center">
                                 {elem.name}
                             </h1>
                         </div>
