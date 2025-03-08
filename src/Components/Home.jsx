@@ -9,7 +9,7 @@ function Home() {
             style={{ backgroundImage: `url(${bgGif})` }}
         >
             <div className="my-8 flex flex-col gap-7 items-center">
-                <h1 className="w-[60rem] text-6xl text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-200 to-orange-400">
+                <h1 className="w-[60rem] text-6xl text-center font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-500 to-yellow-600">
                     You are not done with a book until you pass it to another
                     reader!
                 </h1>
