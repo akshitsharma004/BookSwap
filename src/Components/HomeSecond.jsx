@@ -13,15 +13,15 @@ function HomeSecond() {
         { heading: "🌱 Sustainable", para: "Reduce paper waste by giving books a second life. Every exchange supports a greener planet." },
         { heading: "🚀 Unlimited Reads", para: "With BookSwap, you’ll never run out of books to read! Swap as often as you want." },
     ];
-    useGSAP(() => {
-        gsap.to("#slide1", {
-            x: "20%",
-            duration: 3,
-            repeat: 1,
-            stagger: 1,
-            ease: "none",
-        });
-    });
+    // useGSAP(() => {
+    //     gsap.to("#slide1", {
+    //         x: "20%",
+    //         duration: 3,
+    //         repeat: 1,
+    //         stagger: 1,
+    //         ease: "none",
+    //     });
+    // });
     // useGSAP(() => {
     //     gsap.from("#slide2", {
     //         x: "-100%",
