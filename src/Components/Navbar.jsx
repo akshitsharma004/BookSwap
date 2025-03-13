@@ -18,7 +18,7 @@ function Navbar() {
                     </ul>
                 </div>
                 <div>
-                    <ul className="flex items-center gap-10 text-white text-xl font-semibold">
+                    <ul className="flex cursor-pointer items-center gap-10 text-white text-xl font-semibold">
                         <li>
                             {" "}
                             <Link to="/">Home</Link>
