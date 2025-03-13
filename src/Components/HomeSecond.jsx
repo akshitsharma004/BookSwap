@@ -4,7 +4,8 @@ import pic2 from "../assets/LoginImage.png";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { FaPlus } from "react-icons/fa6";
-
+import { FaMinus } from "react-icons/fa6";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function HomeSecond() {
@@ -32,6 +33,9 @@ function HomeSecond() {
     //         ease: "none",
     //     });
     // });
+    const [openIndex, setOpenIndex] = useState(null);
+
+    
     return (
         <div className="bg-black overflow-hidden py-28 text-white flex justify-between">
             <div>
@@ -49,15 +53,19 @@ function HomeSecond() {
                             className="border w-[40rem] px-7 py-5 rounded-xl border-yellow-600"
                         >  
                         <div className="flex justify-between items-center">
-                            <h1 className="text-2xl text-yellow-600 ">
+                            <h1 className="text-2xl font-semibold text-yellow-600 ">
                                 {item.heading}
                             </h1>
-                            <span className="cursor-pointer">
-                            <FaPlus/>
-                            </span>
-                            </div>
-                            <p className=" py-2 ">{item.para}</p>
-                        </div>
+                            <span className="cursor-pointer transition-all ease-in-out duration-500" onClick={() => setOpenIndex(openIndex === index ? null : index)}>
+                            {openIndex === index ? <FaMinus /> : <FaPlus />}
+                        </span>
+                    </div>
+                    <div
+                        className={`overflow-hidden transition-[max-height,opacity,transform] duration-700 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100 translate-y-0' : 'max-h-0 opacity-0 -translate-y-2'}`}
+                    >
+                        <p className="py-2 transition-opacity duration-700 ease-in-out">{item.para}</p>
+                    </div>
+                </div>
                     ))}
                 </div>
                 <Link to="/MainWhyToExchange">
