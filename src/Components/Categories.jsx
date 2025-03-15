@@ -2,19 +2,19 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Link } from "react-router-dom";
 import pic1 from "../assets/Academics.jpg";
 import pic2 from "../assets/Poetry.jpg";
 import pic3 from "../assets/Action.jpg";
 import pic4 from "../assets/Business.jpg";
 import pic5 from "../assets/Crime.jpg";
 import pic6 from "../assets/Drama.jpg";
-import pic7 from "../assets/HEalth.jpg";
+import pic7 from "../assets/Health.jpg";
 import pic8 from "../assets/Historical.jpg";
 import pic9 from "../assets/Biography.avif";
 import pic10 from "../assets/Horror.avif";
 import pic11 from "../assets/Kids.avif";
 import pic12 from "../assets/Romance.jpg";
-import { Link } from "react-router-dom";
 
 export default function Categories() {
     const settings = {
@@ -41,7 +41,7 @@ export default function Categories() {
         ],
     };
 
-    const data = [
+    const categories = [
         { name: "Academics and Textbooks", img: pic1 },
         { name: "Action and Adventure", img: pic3 },
         { name: "Horror", img: pic10 },
@@ -57,25 +57,25 @@ export default function Categories() {
     ];
 
     return (
-        <div className="max-w-screen-xl mx-auto py-32 flex flex-col items-center">
-            <h1 className="text-5xl md:text-6xl font-bold my-16 text-center">Categories</h1>
+        <div className="max-w-screen-xl mx-auto flex flex-col items-center">
+            <h1 className="text-5xl md:text-6xl font-bold my-16 text-center text-yellow-600">Categories</h1>
             <div className="w-full my-8 flex justify-end px-4">
                 <Link to="/MainExplore">
-                    <h2 className="text-xl md:text-2xl rounded-full px-6 py-3 border border-black hover:bg-white hover:text-black bg-black text-white font-semibold">
+                    <h2 className="text-xl md:text-2xl rounded-full px-6 py-3 border border-yellow-600 hover:bg-orange-500 hover:text-black bg-black text-yellow-600 font-semibold transition-all">
                         Explore All
                     </h2>
                 </Link>
             </div>
-            <div className="px-4 md:px-10 py-10 w-full text-white bg-black">
+            <div className="px-4 md:px-10 py-10 w-full bg-black text-yellow-600 rounded-lg shadow-lg">
                 <Slider {...settings}>
-                    {data.map((elem, index) => (
+                    {categories.map((elem, index) => (
                         <div
                             key={index}
                             className="h-[25rem] w-full flex flex-col items-center"
                         >
-                            <div className="w-full max-w-[18rem] h-[20rem] px-2 overflow-hidden">
+                            <div className="w-full max-w-[18rem] h-[20rem] px-2 overflow-hidden rounded-lg shadow-md">
                                 <img
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform"
                                     src={elem.img}
                                     alt={elem.name}
                                 />

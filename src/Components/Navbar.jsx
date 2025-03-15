@@ -18,19 +18,19 @@ function Navbar() {
                     </ul>
                 </div>
                 <div>
-                    <ul className="flex cursor-pointer items-center gap-10 text-white text-xl font-semibold">
-                        <li>
+                    <ul className="flex cursor-pointer  items-center gap-10 text-white text-xl font-semibold">
+                        <li className="hover:text-yellow-600">
                             {" "}
                             <Link to="/">Home</Link>
                         </li>
-                        <li>
+                        <li className="hover:text-yellow-600">
                             {" "}
                             <Link to="/MainAbout">About Us</Link>
                         </li>
-                        <li>
+                        <li className="hover:text-yellow-600">
                             <Link to="/MainExchange">Exchange</Link>
                         </li>
-                        <li>
+                        <li className="hover:text-yellow-600">
                             <Link to="/MainLogIn">Log In</Link>
                         </li>
 
