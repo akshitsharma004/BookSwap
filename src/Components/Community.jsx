@@ -4,7 +4,7 @@ import { FaEnvelope } from "react-icons/fa";
 function Community() {
     return (
         <div className="flex justify-center items-center h-[30rem] bg-black">
-            <div className="w-[75rem] rounded-4xl flex justify-center bg-yellow-600 px-20 py-10">
+            <div className="w-[75rem] rounded-4xl flex justify-center bg-yellow-600 px-20 py-16">
                 <div className="w-1/2">
                     <h2 className="text-5xl font-bold text-black">Join the community</h2>
                     <p className="mt-2 text-black text-lg">

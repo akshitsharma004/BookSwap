@@ -20,10 +20,10 @@ function Features() {
                 </h2>
                 <div className="grid grid-cols-2 gap-12 py-12">
                     {/* Feature 1 */}
-                    <div className="flex flex-col items-start text-left">
+                    <div className="flex w-[16rem] flex-col items-start text-left">
                         <FaFeather className="text-orange-500 text-xl mb-3" />
                         <h3 className="font-bold text-lg">Best Quality</h3>
-                        <p className="text-gray-600 w-[20rem] text-sm">
+                        <p className="text-gray-600 text-justify w-[20rem] text-sm">
                             Discover a curated collection of literary
                             masterpieces, from timeless classics to modern
                             bestsellers, all crafted with the highest standards of
@@ -32,10 +32,10 @@ function Features() {
                     </div>
 
                     {/* Feature 2 */}
-                    <div className="flex flex-col items-start text-left">
+                    <div className="flex w-[16rem] flex-col items-start text-left">
                         <FaSmile className="text-orange-500 text-xl mb-3" />
                         <h3 className="font-bold text-lg">Quick and Friendly</h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-justify text-sm">
                             Our comprehensive resources provide the latest
                             techniques and trends to help you maximize your
                             reach, engage your audience, and drive growth.
@@ -43,10 +43,10 @@ function Features() {
                     </div>
 
                     {/* Feature 3 */}
-                    <div className="flex flex-col items-start text-left">
+                    <div className="flex w-[16rem] flex-col items-start text-left">
                         <FaGraduationCap className="text-orange-500 text-xl mb-3" />
                         <h3 className="font-bold text-lg">Easy to Learn</h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-justify text-sm">
                             Our platform offers easy-to-understand resources and
                             guides on a variety of subjects, making learning
                             accessible and enjoyable.
@@ -54,10 +54,10 @@ function Features() {
                     </div>
 
                     {/* Feature 4 */}
-                    <div className="flex flex-col items-start text-left">
+                    <div className="flex flex-col w-[16rem] items-start text-left">
                         <FaPenNib className="text-orange-500 text-xl mb-3" />
                         <h3 className="font-bold text-lg">Handwritten</h3>
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-gray-600 text-justify text-sm">
                             Discover a unique collection of handwritten letters,
                             notes, and documents, each telling a personal and
                             authentic story.
