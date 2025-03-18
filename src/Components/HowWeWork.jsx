@@ -22,10 +22,10 @@ const contentData = [
 const HowWeWork = () => {
     return (
         <div className="bg-orange-400 p-8">
-            <div className="bg-black rounded-2xl p-12 flex">
+            <div className="bg-black relative rounded-2xl p-12 flex">
                 <div className="w-2/3 px-6 py-6 relative">
                     {contentData.map((section, index) => (
-                        <div key={index} className="mb-8 sticky top-2">
+                        <div key={index} className="mb-8">
                             <h2 className="text-4xl font-bold text-white mb-4">{section.title}</h2>
                             <p className="text-gray-200 text-lg w-[30rem] leading-relaxed text-justify">
                                 {section.text}
@@ -39,7 +39,7 @@ const HowWeWork = () => {
                     <img
                         src="https://i.pinimg.com/474x/0a/e7/85/0ae78593f5f03df94e4e5a394d0ec8f6.jpg"
                         alt="BookSwap UI"
-                        className="rounded-lg  h-[37rem] mt-10 w-full object-cover"
+                        className="sticky top-15 rounded-lg  h-[37rem] mt-10 w-full object-cover"
                     />
                 </div>
             </div>
