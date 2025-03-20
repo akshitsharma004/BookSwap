@@ -3,19 +3,21 @@ import { RiSearchLine } from "react-icons/ri";
 
 function BookSwap() {
     const [bookTitle, setBookTitle] = useState("");
+    const [bookCategory, setBookCategory] = useState("");
     const [author, setAuthor] = useState("");
     const [condition, setCondition] = useState("");
 
     const handleReset = () => {
         setBookTitle("");
         setAuthor("");
+        setBookCategory("");
         setCondition("");
     };
 
     const AddProductHandler = (e) => {
         e.preventdefault();
     };
-    
+
     return (
         <div className="bg-black py-10">
             <h1 className="text-7xl py-20 text-center text-white font-bold">
@@ -23,12 +25,22 @@ function BookSwap() {
             </h1>
 
             <div className="py-10 text-white flex justify-center gap-20">
-                
-                <div className="w-[35rem] h-[24rem] border text-center py-4 border-yellow-600 rounded-md">
+                <div className="w-[35rem] h-[27rem] border text-center py-4 border-yellow-600 rounded-md">
                     <h1 className="text-3xl text-yellow-600">Give Books</h1>
-                    <p className="text-xl py-2">Add the books you are giving in exchange here</p>
+                    <p className="text-xl py-2">
+                        Add the books you are giving in exchange here
+                    </p>
                     <div className="py-4 flex justify-center">
-                        <form className="w-[20rem]" >
+                        <form className="w-[20rem]">
+                            <input
+                                type="text"
+                                placeholder="Book Category"
+                                className="border border-white p-2 mb-4 rounded-md w-full"
+                                value={bookCategory}
+                                onChange={(e) => setBookCategory(e.target.value)}
+                                required
+                            />
+
                             <input
                                 type="text"
                                 placeholder="Book Title"
@@ -47,14 +59,18 @@ function BookSwap() {
                                 required
                             />
 
-                            <h1 className="text-xl text-yellow-600 mt-4">Book Condition</h1>
+                            <h1 className="text-xl text-yellow-600 mt-4">
+                                Book Condition
+                            </h1>
                             <div className="flex py-2 gap-2 justify-center">
                                 <input
                                     type="radio"
                                     name="condition"
                                     value="New"
                                     checked={condition === "New"}
-                                    onChange={(e) => setCondition(e.target.value)}
+                                    onChange={(e) =>
+                                        setCondition(e.target.value)
+                                    }
                                     required
                                 />
                                 <label>New</label>
@@ -63,7 +79,9 @@ function BookSwap() {
                                     name="condition"
                                     value="Barely Used"
                                     checked={condition === "Barely Used"}
-                                    onChange={(e) => setCondition(e.target.value)}
+                                    onChange={(e) =>
+                                        setCondition(e.target.value)
+                                    }
                                     required
                                 />
                                 <label>Barely Used</label>
@@ -72,7 +90,9 @@ function BookSwap() {
                                     name="condition"
                                     value="Heavily Used"
                                     checked={condition === "Heavily Used"}
-                                    onChange={(e) => setCondition(e.target.value)}
+                                    onChange={(e) =>
+                                        setCondition(e.target.value)
+                                    }
                                     required
                                 />
                                 <label>Heavily Used</label>
@@ -97,13 +117,23 @@ function BookSwap() {
                     </div>
                 </div>
 
-                
-                <div className="w-[35rem] h-[24rem] flex-col flex justify-between border text-center py-4 border-yellow-600 rounded-md">
+                <div className="w-[35rem] h-[27rem] flex-col flex justify-between border text-center py-4 border-yellow-600 rounded-md">
                     <div className="py-2 justify-center">
                         <h1 className="text-3xl text-yellow-600">Take Books</h1>
-                        <p className="text-xl py-2">Add the books you are taking in exchange here</p>
+                        <p className="text-xl py-2">
+                            Add the books you are taking in exchange here
+                        </p>
                         <form className="ml-32 py-3 w-[20rem] relative">
                             <RiSearchLine className="absolute mt-3 ml-3 text-gray-500" />
+
+                            <input
+                                type="text"
+                                placeholder="Book Category"
+                                className="border border-white p-2 pl-10 mb-4 rounded-md w-full"
+                            />
+
+                            <RiSearchLine className="absolute mt-3 ml-3 text-gray-500" />
+
                             <input
                                 type="text"
                                 placeholder="Search for books"
