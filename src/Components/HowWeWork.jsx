@@ -2,6 +2,7 @@ import React from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import pic1 from "../assets/Book.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -58,8 +59,8 @@ const HowWeWork = () => {
     });
 
     return (
-        <div className="bg-orange-400 p-8">
-            <div className="bg-black relative rounded-2xl p-12 flex">
+        <div className="bg-black p-8">
+            <div className="bg-black relative border border-orange-400 rounded-2xl p-12 flex">
                 <div id="scrollBarMain" className="relative flex justify-between pt-10 pb-20">
                     <div className="flex">
                         <div className="relative border-[2.5px] border-white h-[70rem] flex justify-center">
@@ -94,7 +95,7 @@ const HowWeWork = () => {
                     <img
                         src="https://i.pinimg.com/474x/0a/e7/85/0ae78593f5f03df94e4e5a394d0ec8f6.jpg"
                         alt="BookSwap UI"
-                        className="sticky top-15 rounded-lg h-[37rem] mt-10 w-full object-cover"
+                        className="sticky top-20 rounded-lg h-[35rem] border border-orange-400 mt-10 w-full object-cover"
                     />
                 </div>
             </div>
