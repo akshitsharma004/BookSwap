@@ -41,12 +41,12 @@ function Home() {
         >
             <div className="text-center mt-12 max-w-4xl flex flex-col items-center gap-6">
                 <h1
-                    id="slide1"
+                    id=""
                     className="text-6xl w-[80rem] font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-yellow-500 to-yellow-600"
                 >
                     The Book Lover's Dreamland Awaits!
                 </h1>
-                <p id="slide2" className="text-white w-[60rem] text-xl">
+                <p id="" className="text-white w-[60rem] text-xl">
                     Welcome to the ultimate book lover's paradise! Join our
                     community and contribute to the ever-evolving library of
                     stories, where every book has a chance to inspire someone

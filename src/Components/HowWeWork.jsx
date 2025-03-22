@@ -33,7 +33,7 @@ const HowWeWork = () => {
             gsap.set(`#description-${index}`, { color: "#bfbfbf" }); // Light gray
 
             gsap.to(`#heading-${index}`, {
-                color: "#bc7137", // Orange-brown color
+                color: "#FF8904", // Orange-brown color
                 ease: "sine.out",
                 scrollTrigger: {
                     trigger: `#heading-${index}`,
