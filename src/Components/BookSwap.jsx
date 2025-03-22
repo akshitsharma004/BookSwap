@@ -15,23 +15,28 @@ function BookSwap() {
     };
 
     const AddProductHandler = (e) => {
-        e.preventdefault();
+        e.preventDefault(); // Fixed typo
     };
 
     return (
         <div className="bg-black py-10">
-            <h1 className="text-7xl py-20 text-center text-white font-bold">
+            {/* BookSwap Heading */}
+            <h1 className="text-7xl text-center text-white font-bold">
                 Book<span className="text-yellow-600">Swap</span>
             </h1>
 
+            {/* Horizontal Line Directly Below Heading */}
+            <hr className="w-[90%] mx-auto border-orange-400 mt-12 mb-10" />
+
             <div className="py-10 text-white flex justify-center gap-20">
+                {/* Give Books Section */}
                 <div className="w-[35rem] h-[27rem] border text-center py-4 border-yellow-600 rounded-md">
                     <h1 className="text-3xl text-yellow-600">Give Books</h1>
                     <p className="text-xl py-2">
                         Add the books you are giving in exchange here
                     </p>
                     <div className="py-4 flex justify-center">
-                        <form className="w-[20rem]">
+                        <form className="w-[20rem]" onSubmit={AddProductHandler}>
                             <input
                                 type="text"
                                 placeholder="Book Category"
@@ -68,9 +73,7 @@ function BookSwap() {
                                     name="condition"
                                     value="New"
                                     checked={condition === "New"}
-                                    onChange={(e) =>
-                                        setCondition(e.target.value)
-                                    }
+                                    onChange={(e) => setCondition(e.target.value)}
                                     required
                                 />
                                 <label>New</label>
@@ -79,9 +82,7 @@ function BookSwap() {
                                     name="condition"
                                     value="Barely Used"
                                     checked={condition === "Barely Used"}
-                                    onChange={(e) =>
-                                        setCondition(e.target.value)
-                                    }
+                                    onChange={(e) => setCondition(e.target.value)}
                                     required
                                 />
                                 <label>Barely Used</label>
@@ -90,9 +91,7 @@ function BookSwap() {
                                     name="condition"
                                     value="Heavily Used"
                                     checked={condition === "Heavily Used"}
-                                    onChange={(e) =>
-                                        setCondition(e.target.value)
-                                    }
+                                    onChange={(e) => setCondition(e.target.value)}
                                     required
                                 />
                                 <label>Heavily Used</label>
@@ -117,6 +116,7 @@ function BookSwap() {
                     </div>
                 </div>
 
+                {/* Take Books Section */}
                 <div className="w-[35rem] h-[27rem] flex-col flex justify-between border text-center py-4 border-yellow-600 rounded-md">
                     <div className="py-2 justify-center">
                         <h1 className="text-3xl text-yellow-600">Take Books</h1>

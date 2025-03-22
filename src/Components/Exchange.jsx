@@ -13,9 +13,9 @@ function Exchange() {
     return (
         <div className="flex overflow-hidden">
             <img src={pic1} alt="" />
-            <div className="bg-black py-20 flex flex-col text-white items-center w-full gap-32">
+            <div className="bg-black py-20 flex flex-col text-center text-white items-center w-full gap-32">
                 <h1 className="text-5xl font-semibold">
-                    <span className="text-transparent font-semibold bg-clip-text bg-gradient-to-r from-yellow-600 via-yellow-300 to-orange-500">
+                    <span className=" font-semibold text-orange-400">
                         {" "}
                         Exchange your books{" "}
                     </span>
