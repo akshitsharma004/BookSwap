@@ -4,17 +4,17 @@ import pic2 from "../assets/Cat.png";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
 function Exchange() {
-//    useGSAP(()=> {
-//           gsap.from("#cat",{
-//             x: "100%",
-//             duration: 5,
-//           })
-//    })
+   useGSAP(()=> {
+          gsap.from("#slide1",{
+            y: "-100%",
+            duration: 2,
+          })
+   })
     return (
         <div className="flex overflow-hidden">
             <img src={pic1} alt="" />
             <div className="bg-black py-20 flex flex-col text-center text-white items-center w-full gap-32">
-                <h1 className="text-5xl font-semibold">
+                <h1 id="slide1" className="text-5xl font-semibold">
                     <span className=" font-semibold text-orange-400">
                         {" "}
                         Exchange your books{" "}
