@@ -7,13 +7,13 @@ function WhoWeAre() {
             {/* Horizontal Line */}
             <hr className="absolute top-10 w-[90%]  border-orange-400" />
 
-            <div className="flex justify-center w-full px-16">
+            <div className="flex py-24 justify-center w-full px-16">
                 {/* Text Section */}
                 <div className="flex flex-col gap-5 w-[30rem]">
                     <h1 className="text-6xl font-bold text-orange-500">
                         <span className="text-white">Who</span> We Are?
                     </h1>
-                    <p className="text-white text-justify mt-10 text-xl">
+                    <p className="text-white leading-relaxed mt-10 text-xl">
                         <span className="font-semibold text-orange-500">
                             BookSwap
                         </span>{" "}

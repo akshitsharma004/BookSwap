@@ -57,9 +57,9 @@ export default function Categories() {
     ];
 
     return (
-        <div className="max-w-screen-xl mx-auto flex flex-col items-center">
+        <div className="px-20 pt-20 flex flex-col items-center bg-black">
             <h1 className="text-5xl md:text-6xl font-bold my-16 text-center text-yellow-600">Categories</h1>
-            <div className="w-full my-8 flex justify-end px-4">
+            <div className="w-full flex justify-end px-4">
                 <Link to="/MainExplore">
                     <h2 className="text-xl md:text-2xl rounded-full px-6 py-3 border border-yellow-600 hover:bg-orange-500 hover:text-black bg-black text-yellow-600 font-semibold transition-all">
                         Explore All

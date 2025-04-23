@@ -10,7 +10,7 @@ import Carousel from "../Components/Carousel";
 
 function MainHome() {
     return (
-        <div className="bg-black">
+        <div className="bg-white">
             <Home />
             <Features />
             <Carousel />
