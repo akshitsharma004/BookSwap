@@ -12,6 +12,7 @@ function Features() {
             rotate: 0,  // Rotates back to normal
             scrollTrigger: {
                 trigger: "#slide1",
+                duration: 10,
                 scroller: "body",
                 start: "top 60%",  // Adjusted trigger position
                 end: "top 30%",

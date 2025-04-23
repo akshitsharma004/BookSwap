@@ -24,15 +24,16 @@ function Home() {
     //         ease: "none",
     //     });
     // });
-    useGSAP(() => {
-        gsap.from("#slide3", {
-            y: "10%",
-            duration: 1,
-            // repeat: 1,
-            stagger: 1,
-            ease: "none",
-        });
-    });
+    
+    // useGSAP(() => {
+    //     gsap.from("#slide3", {
+    //         y: "10%",
+    //         duration: 1,
+    //         // repeat: 1,
+    //         stagger: 1,
+    //         ease: "none",
+    //     });
+    // });
     return (
         <div
         id="slide3"

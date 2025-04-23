@@ -7,6 +7,7 @@ import Features from "../Components/Features";
 import Community from "../Components/Community";
 import HowWeWork from "../Components/HowWeWork";
 import Carousel from "../Components/Carousel";
+
 function MainHome() {
     return (
         <div className="bg-black">
@@ -18,6 +19,7 @@ function MainHome() {
             <Categories />
             <HomeSecond />
             <Community />
+            
         </div>
     );
 }

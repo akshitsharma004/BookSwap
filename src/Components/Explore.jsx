@@ -11,6 +11,9 @@ import pic9 from "../assets/Biography.avif";
 import pic10 from "../assets/Horror.avif";
 import pic11 from "../assets/Kids.avif";
 import pic12 from "../assets/Romance.jpg";
+import Community from "./Community";
+
+
 
 function Explore() {
     const data = [
@@ -50,8 +53,11 @@ function Explore() {
                     </div>
                 ))}
             </div>
+            <Community/>
         </div>
+        
     );
+    
 }
 
 export default Explore;
