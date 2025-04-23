@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
     return (
-        <div className="w-full bg-gradient-to-b bg-black text-white py-12 shadow-2xl">
+        <div className="w-full bg-gradient-to-b bg-black text-white pt-12 py-3 shadow-2xl">
             {/* Top Section */}
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-8 gap-8">
                 {/* Contact Info */}
@@ -42,7 +42,7 @@ function Footer() {
             </div>
 
             {/* Divider */}
-            <hr className="border-t border-orange-500 my-8"></hr>
+            <hr className="border-t border-orange-500 my-2"></hr>
 
             {/* Bottom Section */}
             <div className="container mx-auto flex flex-col md:flex-row justify-between text-gray-500 text-sm px-6 md:px-16">
